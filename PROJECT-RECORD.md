@@ -16,8 +16,8 @@ An independent, beginner-friendly learning platform for planning, building, test
 - Repository: https://github.com/aigroupchathq/aigroupchat-guide
 - Default branch: `main`
 - Pages source: `/ (root)`
-- Expected public URL: https://aigroupchathq.github.io/aigroupchat-guide/
-- Status: Repository created. GitHub Pages publishing must be enabled in repository settings and verified after deployment.
+- Public URL: https://aigroupchathq.github.io/aigroupchat-guide/
+- Status: Live. GitHub Pages deployment completed successfully from `main` at the repository root.
 
 ## Site contents
 
@@ -38,4 +38,5 @@ An independent, beginner-friendly learning platform for planning, building, test
 
 ## Record of this publishing setup
 
-- 2026-09-27: Created the `aigroupchat-guide` repository and prepared the static site files for GitHub Pages.
+- 2026-09-27: Created the public `aigroupchat-guide` repository, uploaded the site and project record, and enabled GitHub Pages from `main` at the repository root.
+- 2026-09-27: Verified that https://aigroupchathq.github.io/aigroupchat-guide/ loads the published guide.
