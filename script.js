@@ -61,26 +61,121 @@ const promptForm = document.querySelector("#prompt-form");
 const generatedWrap = document.querySelector("#generated-wrap");
 const generatedPrompt = document.querySelector("#generated-prompt");
 const copyStatus = document.querySelector("#copy-status");
+const modeSelect = document.querySelector("#work-mode");
+const toneSelect = document.querySelector("#tone");
+const modeHelp = document.querySelector("#mode-help");
+const toneHelp = document.querySelector("#tone-help");
+const lessonPanel = document.querySelector("#lesson-panel");
+const lessonList = document.querySelector("#lesson-list");
+const lessonStatus = document.querySelector("#lesson-status");
+const lessonKey = "vision-intelligence-prompt-lessons-v1";
+const maxLessons = 20;
+
+const modeDetails = {
+  design: {
+    help: "Use this to explore a direction and make a decision. It must stop before implementation.",
+    instructions: [
+      "Show up to two distinct directions and recommend one.",
+      "Make the proposal concrete with a preview or example where possible. State assumptions and the main trade-off.",
+      "Do not implement, edit files, or add unrequested features. Stop after presenting the proposal."
+    ]
+  },
+  implementation: {
+    help: "Use this after a design or approach is approved. Give discretion for routine decisions; make scope and checks explicit.",
+    instructions: [
+      "Inspect the relevant project context, then make the smallest complete change that achieves the requested outcome.",
+      "Preserve existing behavior and avoid features outside the stated boundaries. Use reasonable judgement for routine choices; ask only if a blocker or consequential risk prevents safe progress.",
+      "Run the relevant available checks. Report what changed and the actual check results; do not claim a check passed if it was not run."
+    ]
+  },
+  verification: {
+    help: "Use this to test a specific claim independently. The verifier reports evidence and does not repair or redesign.",
+    instructions: [
+      "Check the work against the stated success criteria using the most relevant available evidence or tests.",
+      "Do not edit, repair, or redesign the work while verifying it. Distinguish pass, fail, and inconclusive results.",
+      "Report the exact evidence, limitations, and any checks you could not run. Do not infer success from a plausible appearance."
+    ]
+  }
+};
+
+const toneDetails = {
+  analytical: {
+    description: "Compare evidence and options; avoid turning a focused decision into excessive analysis.",
+    instruction: "Use an analytical, neutral tone: distinguish evidence, assumptions, options, and uncertainty. Keep analysis proportional to the decision."
+  },
+  direct: {
+    description: "Execute a defined task; the risk is acting too quickly on ambiguity.",
+    instruction: "Use a direct, instructional tone. Be concise and action-oriented, but surface consequential ambiguity instead of guessing."
+  },
+  socratic: {
+    description: "Support learning through questions; too many questions can slow progress.",
+    instruction: "Use a Socratic, coaching tone. Ask only questions that help me reason through an important choice; do not question every routine detail."
+  },
+  exploratory: {
+    description: "Generate alternatives; keep exploration inside the stated constraints.",
+    instruction: "Use an exploratory, creative tone. Offer fresh possibilities while staying within the requested scope and making trade-offs clear."
+  },
+  critical: {
+    description: "Challenge assumptions; focus on plausible, material objections rather than endless audits.",
+    instruction: "Use a critical tone. Test important assumptions and identify evidence that could change the conclusion without inventing objections."
+  },
+  empathetic: {
+    description: "Handle sensitive conversations with care; warmth must not replace honest judgement.",
+    instruction: "Use an empathetic, supportive tone. Be considerate while remaining candid about risks, uncertainty, and problems."
+  },
+  persuasive: {
+    description: "Communicate a position; keep confidence proportional to the evidence.",
+    instruction: "Use a persuasive, editorial tone. Make the case clearly, but do not overstate confidence or omit material counter-evidence."
+  },
+  operational: {
+    description: "Handle engineering and controlled changes; avoid bureaucracy and unnecessary approval loops.",
+    instruction: "Use an operational, precise tone. State actions, boundaries, checks, and completion clearly; use judgement for ordinary implementation details."
+  }
+};
+
+function updatePromptGuidance() {
+  modeHelp.textContent = modeDetails[modeSelect.value].help;
+  toneHelp.textContent = toneDetails[toneSelect.value].description;
+}
+
+modeSelect.addEventListener("change", updatePromptGuidance);
+toneSelect.addEventListener("change", updatePromptGuidance);
+updatePromptGuidance();
 
 promptForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const idea = document.querySelector("#idea").value.trim();
-  const audience = document.querySelector("#audience").value.trim() || "People who need this solution";
-  const task = document.querySelector("#main-task").value.trim() || "Complete the most important task";
-  const keepSimple = document.querySelector("#keep-simple").checked;
+  const work = document.querySelector("#idea").value.trim();
+  const success = document.querySelector("#success").value.trim();
+  const boundaries = document.querySelector("#boundaries").value.trim();
 
-  if (!idea) {
+  if (!work || !success || !boundaries) {
     document.querySelector("#idea").focus();
     return;
   }
 
-  const limits = keepSimple
-    ? "Keep the first version small. Do not add accounts, payment handling, sensitive data collection or features that are not essential to this first task."
-    : "Keep the scope focused on the first task. Ask before adding accounts, payments, sensitive data collection or other major features.";
+  const mode = modeDetails[modeSelect.value];
+  const tone = toneDetails[toneSelect.value];
+  const taskType = modeSelect.options[modeSelect.selectedIndex].text.split(" — ")[0].toUpperCase();
 
-  generatedPrompt.value = `I want to make: ${idea}\n\nIt is for: ${audience}\n\nThe first thing a user should be able to do is: ${task}\n\nPlease start by proposing a short plan for the smallest useful first version. Describe the screens, user flow and any assumptions. Do not write code yet. Ask me questions if important details are missing.\n\n${limits}\n\nAfter I approve the plan, build one step at a time. Explain important decisions in plain language. Tell me how to preview the result and what I should test. Do not invent claims, data or integrations.`;
+  generatedPrompt.value = [
+    `WORK MODE: ${taskType}`,
+    "",
+    `Work or claim: ${work}`,
+    "",
+    `Success means: ${success}`,
+    "",
+    `Boundaries: ${boundaries}`,
+    "",
+    "Communication style:",
+    tone.instruction,
+    "Tone changes expression, not the standard of evidence. Do not imply that a tone or role gives you expertise or guarantees correctness.",
+    "",
+    "Instructions:",
+    ...mode.instructions.map((instruction) => `- ${instruction}`)
+  ].join("\n");
   generatedWrap.hidden = false;
-  copyStatus.textContent = "Review this brief and edit it to fit your idea.";
+  lessonPanel.hidden = false;
+  copyStatus.textContent = "Review and edit the prompt. Remove anything sensitive before sharing.";
   generatedPrompt.focus();
 });
 
@@ -92,6 +187,104 @@ document.querySelector("#copy-prompt").addEventListener("click", async () => {
     generatedPrompt.focus();
     generatedPrompt.select();
     copyStatus.textContent = "Clipboard access is unavailable here. The brief is selected so you can copy it with Ctrl+C.";
+  }
+});
+
+document.querySelector("#share-prompt").addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: "Vision Intelligence prompt", text: generatedPrompt.value });
+      copyStatus.textContent = "Share sheet opened. Review the prompt before sending it.";
+    } catch (error) {
+      copyStatus.textContent = error.name === "AbortError"
+        ? "Sharing was cancelled."
+        : "The share action failed. You can still copy the prompt instead.";
+    }
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(generatedPrompt.value);
+    copyStatus.textContent = "This browser has no share sheet, so the prompt was copied for you to paste where you choose.";
+  } catch (error) {
+    generatedPrompt.focus();
+    generatedPrompt.select();
+    copyStatus.textContent = "Sharing and clipboard access are unavailable here. The prompt is selected so you can copy it with Ctrl+C.";
+  }
+});
+
+function readLessons() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(lessonKey) || "[]");
+    if (!Array.isArray(saved) || !saved.every((lesson) =>
+      lesson &&
+      typeof lesson.date === "string" &&
+      Number.isFinite(Date.parse(lesson.date)) &&
+      typeof lesson.mode === "string" &&
+      typeof lesson.outcome === "string" &&
+      typeof lesson.note === "string"
+    )) {
+      throw new TypeError("Saved lessons must be a list.");
+    }
+    return saved.slice(0, maxLessons);
+  } catch (error) {
+    lessonStatus.textContent = "Saved lessons could not be read. You can still use the prompt builder.";
+    return null;
+  }
+}
+
+function renderLessons() {
+  const lessons = readLessons();
+  if (lessons === null) {
+    return;
+  }
+  lessonList.replaceChildren();
+  lessons.forEach((lesson) => {
+    const item = document.createElement("li");
+    const heading = document.createElement("strong");
+    const note = document.createElement("span");
+    const date = document.createElement("small");
+    heading.textContent = `${lesson.mode} · ${lesson.outcome}`;
+    note.textContent = lesson.note;
+    date.textContent = new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(lesson.date));
+    item.append(heading, note, date);
+    lessonList.append(item);
+  });
+}
+
+renderLessons();
+
+document.querySelector("#save-lesson").addEventListener("click", () => {
+  const lessons = readLessons();
+  if (lessons === null) {
+    return;
+  }
+  const outcome = document.querySelector("#lesson-outcome");
+  const note = document.querySelector("#lesson-note").value.trim();
+  lessons.unshift({
+    date: new Date().toISOString(),
+    mode: modeSelect.options[modeSelect.selectedIndex].text.split(" — ")[0],
+    outcome: outcome.options[outcome.selectedIndex].text,
+    note
+  });
+
+  try {
+    localStorage.setItem(lessonKey, JSON.stringify(lessons.slice(0, maxLessons)));
+    lessonStatus.textContent = "Lesson saved in this browser only.";
+    document.querySelector("#lesson-note").value = "";
+    renderLessons();
+  } catch (error) {
+    lessonStatus.textContent = "This browser could not save the lesson. The prompt is still available to copy.";
+  }
+});
+
+document.querySelector("#clear-lessons").addEventListener("click", () => {
+  try {
+    localStorage.removeItem(lessonKey);
+    lessonList.replaceChildren();
+    lessonStatus.textContent = "Saved lessons cleared from this browser.";
+  } catch (error) {
+    lessonStatus.textContent = "This browser could not clear saved lessons.";
   }
 });
 

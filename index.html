@@ -3,29 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A practical, beginner-friendly guide to planning, building, testing and publishing software with AI tools." />
-    <meta property="og:title" content="AI Group Chat | A practical guide to building with AI" />
-    <meta property="og:description" content="Choose a learning path, compare tools, write a better first prompt and launch carefully." />
+    <meta name="description" content="Vision Intelligence helps you shape clear AI instructions through three focused modes: Design, Implementation and Verification." />
+    <meta property="og:title" content="Vision Intelligence | A language tool for clearer work with AI" />
+    <meta property="og:description" content="Turn intent into focused prompts. Choose a mode, set a tone, share the prompt and learn from what happens." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aigroupchathq.github.io/aigroupchat-guide/" />
-    <link rel="canonical" href="https://aigroupchathq.github.io/aigroupchat-guide/" />
+    <meta property="og:url" content="https://aigroupchathq.github.io/vision-intelligence/" />
+    <link rel="canonical" href="https://aigroupchathq.github.io/vision-intelligence/" />
     <meta name="theme-color" content="#f4f3ed" />
-    <title>AI Group Chat | A practical guide to building with AI</title>
+    <title>Vision Intelligence | A language tool for clearer work with AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="vision-tool.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="shell nav-wrap">
-        <a class="wordmark" href="#top" aria-label="AI Group Chat home"><span class="mark">AG</span><span>AI Group Chat</span></a>
+        <a class="wordmark" href="#top" aria-label="Vision Intelligence home"><span class="mark">VI</span><span>Vision Intelligence</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
         <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <a href="#paths">Learning paths</a>
           <a href="#tools">Find a tool</a>
-          <a href="#prompt-lab">Prompt lab</a>
+          <a href="#prompt-lab">Prompt studio</a>
           <a href="#basics">Plain language basics</a>
           <a href="#launch">Launch checklist</a>
         </nav>
@@ -36,14 +37,14 @@
     <main id="main">
       <section class="hero shell" id="top">
         <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-line"></span> A field guide for people with an idea</p>
-          <h1>Make the thing<br />you wish <em>existed.</em></h1>
-          <p class="hero-copy">A calm, practical place to learn how to plan, build and publish software with AI. No jargon required. You stay in charge of the decisions.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> A language tool for clearer work with AI</p>
+          <h1>Give ideas<br />better <em>direction.</em></h1>
+          <p class="hero-copy">A launchpad for clearer thinking and more creative work with AI. Separate design, implementation and verification; choose a tone that fits; then judge the result against what you meant. It guides better requests—it does not make AI infallible.</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="#paths">Choose a learning path</a>
-            <a class="quiet-link" href="#prompt-lab">Or shape your first prompt</a>
+            <a class="button button-dark" href="#prompt-lab">Build a better prompt</a>
+            <a class="quiet-link" href="#workflow">Learn the method</a>
           </div>
-          <div class="hero-note"><span class="note-dot"></span><span>Start small. Test what you make. Keep a copy of your work.</span></div>
+          <div class="hero-note"><span class="note-dot"></span><span>Clearer intent. Useful boundaries. Evidence at the finish.</span></div>
         </div>
         <div class="hero-art" aria-label="A preview of a product idea becoming a working project" role="img">
           <div class="art-top"><span>YOUR IDEA</span><span class="art-status">IN PROGRESS</span></div>
@@ -56,7 +57,7 @@
       </section>
 
       <section class="principle-strip" aria-label="How this guide works">
-        <div class="shell strip-inner"><span>Learn by making</span><b></b><span>Use plain language</span><b></b><span>Check the result</span><b></b><span>Keep ownership</span></div>
+        <div class="shell strip-inner"><span>Separate the work</span><b></b><span>Choose a tone</span><b></b><span>Check what happened</span><b></b><span>Keep human judgement</span></div>
       </section>
 
       <section class="section shell paths-section" id="paths">
@@ -138,24 +139,66 @@
 
       <section class="prompt-section" id="prompt-lab">
         <div class="shell prompt-layout">
-          <div class="prompt-intro"><p class="eyebrow">03 / Make the first request useful</p><h2>A better brief<br />makes a better start.</h2><p>Instead of asking AI to “build an app”, tell it who the app is for, what they need to do and what a first version should leave out.</p>
-            <div class="prompt-tip"><span class="tip-number">01</span><p><strong>Keep the first version small.</strong><br />A focused first build is easier to review, test and improve.</p></div>
-            <div class="prompt-tip"><span class="tip-number">02</span><p><strong>Ask for a plan before code.</strong><br />Check that you and the tool agree on the work before it starts.</p></div>
+          <div class="prompt-intro"><p class="eyebrow">03 / The Vision Intelligence prompt studio</p><h2>Three ways<br />to work clearly.</h2><p>One request can ask for too many jobs at once. Choose the kind of work first, then shape the prompt around a real outcome.</p>
+            <div class="method-grid">
+              <article><span>01 / DESIGN</span><strong>Decide what you want.</strong><p>Explore a direction, compare trade-offs and stop before implementation.</p></article>
+              <article><span>02 / IMPLEMENTATION</span><strong>Build what was approved.</strong><p>Give room for routine choices while holding the line on scope and checks.</p></article>
+              <article><span>03 / VERIFICATION</span><strong>Check a specific claim.</strong><p>Ask for evidence and a precise pass, fail or inconclusive result—not a redesign.</p></article>
+            </div>
+            <p class="principle-note"><strong>Tone is a signal, not a superpower.</strong> It shapes how a response is expressed; it does not grant expertise or guarantee truth.</p>
+            <p class="research-note"><strong>Improve by testing, not by adding adjectives.</strong> The <a href="https://arxiv.org/abs/2406.06608" target="_blank" rel="noreferrer">Prompt Report</a> maps prompting techniques—not magic formulations or tones. <a href="https://dspy.ai/" target="_blank" rel="noreferrer">DSPy</a> demonstrates optimizing language-model pipelines against explicit metrics. Use representative tasks, record failures, and change the instruction linked to the problem.</p>
           </div>
           <form class="prompt-builder" id="prompt-form">
-            <div class="prompt-window-head"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="window-title">First brief builder</span></div>
-            <label for="idea">What do you want to make?</label>
-            <textarea id="idea" name="idea" rows="2" maxlength="300" placeholder="For example, a simple site to help my community find local repair cafés" required></textarea>
+            <div class="prompt-window-head"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="window-title">Build your working prompt</span></div>
             <div class="form-pair">
-              <div><label for="audience">Who is it for?</label><input id="audience" name="audience" maxlength="120" placeholder="People in my neighbourhood" /></div>
-              <div><label for="main-task">What should they do first?</label><input id="main-task" name="task" maxlength="120" placeholder="Find a nearby event" /></div>
+              <div><label for="work-mode">What kind of work?</label><select id="work-mode" name="mode">
+                <option value="design">Design — explore and decide</option>
+                <option value="implementation">Implementation — build the approved work</option>
+                <option value="verification">Verification — check a claim with evidence</option>
+              </select></div>
+              <div><label for="tone">What tone fits this work?</label><select id="tone" name="tone">
+                <option value="analytical">Analytical / neutral</option>
+                <option value="direct">Direct / instructional</option>
+                <option value="socratic">Socratic / coaching</option>
+                <option value="exploratory">Exploratory / creative</option>
+                <option value="critical">Critical / adversarial</option>
+                <option value="empathetic">Empathetic / supportive</option>
+                <option value="persuasive">Persuasive / editorial</option>
+                <option value="operational">Operational / precise</option>
+              </select></div>
             </div>
-            <label class="check-label"><input id="keep-simple" type="checkbox" checked /> Keep the first version small and avoid accounts or sensitive data.</label>
-            <button class="button button-lime" type="submit">Build my project brief</button>
+            <p class="field-hint" id="mode-help" aria-live="polite"></p>
+            <p class="tone-hint" id="tone-help" aria-live="polite"></p>
+            <label for="idea">What work or claim should the AI address?</label>
+            <textarea id="idea" name="idea" rows="2" maxlength="500" placeholder="For example, redesign the Motor World home page for image-led browsing" required></textarea>
+            <label for="success">What would a successful result look like?</label>
+            <textarea id="success" name="success" rows="2" maxlength="400" placeholder="For example, visitors can browse by make, open a focused car view and find a car quickly" required></textarea>
+            <label for="boundaries">What should stay in scope—and what should not?</label>
+            <textarea id="boundaries" name="boundaries" rows="2" maxlength="400" placeholder="Keep existing content. Do not add telemetry, ownership data or new features." required></textarea>
+            <p class="privacy-note">Keep passwords, API keys, private records and sensitive personal data out of prompts and saved lessons.</p>
+            <button class="button button-lime" type="submit">Create my prompt</button>
             <div class="generated-wrap" id="generated-wrap" hidden>
-              <label for="generated-prompt">Your starting brief</label>
-              <textarea id="generated-prompt" rows="10" readonly></textarea>
-              <div class="generated-actions"><span id="copy-status" role="status" aria-live="polite">Review this brief and edit it to fit your idea.</span><button class="copy-button" id="copy-prompt" type="button">Copy brief</button></div>
+              <label for="generated-prompt">Your working prompt <span class="editable-note">— review and edit before sharing</span></label>
+              <textarea id="generated-prompt" rows="14" maxlength="5000"></textarea>
+              <div class="generated-actions"><span id="copy-status" role="status" aria-live="polite">Your prompt is ready to review.</span><div><button class="copy-button" id="share-prompt" type="button">Share prompt</button><button class="copy-button" id="copy-prompt" type="button">Copy prompt</button></div></div>
+              <div class="lesson-panel" id="lesson-panel" hidden>
+                <h3>What happened when you tried it?</h3>
+                <p>Keep a small lesson so you can improve the instruction that caused the friction—not just make every prompt longer.</p>
+                <label for="lesson-outcome">What did you notice?</label>
+                <select id="lesson-outcome">
+                  <option value="matched">Matched the intention</option>
+                  <option value="extras">Added unrequested features</option>
+                  <option value="cautious">Asked permission for routine choices</option>
+                  <option value="unsupported">Claimed a check without evidence</option>
+                  <option value="other">Something else</option>
+                </select>
+                <label for="lesson-note">What should you change next time? (optional)</label>
+                <textarea id="lesson-note" rows="2" maxlength="500" placeholder="For example, state which content must remain and what is explicitly out of scope."></textarea>
+                <div class="lesson-actions"><button class="copy-button" id="save-lesson" type="button">Save lesson in this browser</button><span id="lesson-status" role="status" aria-live="polite"></span></div>
+                <div class="lesson-log-head"><strong>Your recent lessons</strong><button class="text-button" id="clear-lessons" type="button">Clear lessons</button></div>
+                <ol class="lesson-list" id="lesson-list"></ol>
+                <small>Only the 20 most recent lessons are saved in this browser. They are not sent to a server or shared with anyone.</small>
+              </div>
             </div>
           </form>
         </div>
@@ -218,17 +261,17 @@
 
       <section class="closing shell">
         <div><p class="eyebrow">One small step is enough</p><h2>Your idea is a<br />good place to start.</h2></div>
-        <a class="button button-dark" href="#prompt-lab">Write a first brief</a>
+        <a class="button button-dark" href="#prompt-lab">Build a working prompt</a>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <a class="wordmark footer-wordmark" href="#top"><span class="mark">AG</span><span>AI Group Chat</span></a>
-        <p>Created by Vaishnav Deshmukh to help people build useful things with AI, one thoughtful step at a time.</p>
+        <a class="wordmark footer-wordmark" href="#top"><span class="mark">VI</span><span>Vision Intelligence</span></a>
+        <p>Created by Vaishnav Deshmukh to help people give AI clearer direction and judge the result for themselves.</p>
         <nav aria-label="Footer navigation"><a href="#paths">Learning paths</a><a href="#tools">Tools</a><a href="#basics">Plain language basics</a><a href="#launch">Launch checklist</a></nav>
         <span class="footer-note">Independent guide. Check providers for current details.</span>
-        <a class="feedback-link" href="mailto:vaishnavdeshmukh23@gmail.com?subject=AI%20Group%20Chat%20guide%20feedback">Suggest an improvement</a>
+        <a class="feedback-link" href="mailto:vaishnavdeshmukh23@gmail.com?subject=Vision%20Intelligence%20feedback">Suggest an improvement</a>
       </div>
     </footer>
     <script src="script.js"></script>

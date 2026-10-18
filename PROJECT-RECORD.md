@@ -1,42 +1,49 @@
-# AI Group Chat project record
+# Vision Intelligence project record
 
 ## Purpose
 
-An independent, beginner-friendly learning platform for planning, building, testing and publishing software with AI tools.
+A browser-based language tool for building clearer AI instructions through three separate work modes—Design, Implementation, and Verification—and improving them from observed outcomes.
+
+The name is aspirational. The site helps people express intent and evaluate AI output; it does not provide superintelligence or guarantee correct results.
 
 ## Current source
 
-- Local project folder: `aigroupchat-platform`
-- Source files: `index.html`, `styles.css`, `script.js`
+- Repository: https://github.com/aigroupchathq/vision-intelligence
+- Source files: `index.html`, `styles.css`, `vision-tool.css`, `script.js`
 - Documentation: `README.md`
-- Original live site: https://aigroupchatserver.netlify.app/
+- Former project URL: https://aigroupchathq.github.io/aigroupchat-guide/
+- Previous live site: https://aigroupchatserver.netlify.app/
 
 ## GitHub Pages publishing
 
-- Repository: https://github.com/aigroupchathq/aigroupchat-guide
 - Default branch: `main`
 - Pages source: `/ (root)`
-- Public URL: https://aigroupchathq.github.io/aigroupchat-guide/
-- Status: Live. GitHub Pages deployment completed successfully from `main` at the repository root.
+- Public URL: https://aigroupchathq.github.io/vision-intelligence/
+- Status: Published from the repository's `main` branch at the root.
 
 ## Site contents
 
-- Three learning paths for first-time builders, interactive app prototypes and existing codebases.
-- Tool finder with categories and direct provider links.
-- Interactive starting-brief generator.
-- Plain-language software glossary.
-- Practical build-and-launch workflow.
-- Browser-saved project launch checklist.
-- Frequently asked questions about tool choice, testing, data and ownership.
+- Guided prompt builder with separate Design, Implementation, and Verification modes.
+- Eight tone choices, each with its best use and a practical risk to watch.
+- Editable prompts with copy and browser share-sheet support where available.
+- Browser-local lesson log, capped at the 20 most recent entries.
+- Learning paths and a finder for tools to build and publish software.
+- Plain-language software glossary, practical workflow, FAQs, and launch checklist.
+
+## Privacy and data
+
+- The site does not connect to a model or transmit prompt-builder content to a server.
+- The prompt and lesson log are stored only in the visitor's current browser when explicitly saved. They can be cleared from that browser.
+- Visitors should not enter secrets, private records, or sensitive personal information.
 
 ## Update procedure
 
 1. Edit the source files in this folder.
-2. Upload or commit the changed files to the repository's `main` branch.
-3. Wait for the GitHub Pages deployment to finish.
-4. Check the public URL and test key interactions on desktop and mobile.
+2. Review the changes and run the applicable checks.
+3. Push changed files to the repository's `main` branch.
+4. Wait for the GitHub Pages deployment.
+5. Verify the public URL and test prompt generation, sharing/copying, local lesson storage, and the responsive layout.
 
-## Record of this publishing setup
+## Rename record
 
-- 2026-09-27: Created the public `aigroupchat-guide` repository, uploaded the site and project record, and enabled GitHub Pages from `main` at the repository root.
-- 2026-09-27: Verified that https://aigroupchathq.github.io/aigroupchat-guide/ loads the published guide.
+The repository was previously named `aigroupchat-guide`, and the site was titled “AI Group Chat.” It has been renamed “Vision Intelligence” to reflect its prompt-building focus. GitHub Pages publishes the project at the repository-derived URL above.
