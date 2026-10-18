@@ -11,7 +11,7 @@ The name is aspirational. The site helps people express intent and evaluate AI o
 - Repository: https://github.com/aigroupchathq/vision-intelligence
 - Source files: `index.html`, `styles.css`, `vision-tool.css`, `script.js`
 - Documentation: `README.md`
-- Former project URL: https://aigroupchathq.github.io/aigroupchat-guide/
+- Former Pages URL (does not redirect): https://aigroupchathq.github.io/aigroupchat-guide/
 - Previous live site: https://aigroupchatserver.netlify.app/
 
 ## GitHub Pages publishing
