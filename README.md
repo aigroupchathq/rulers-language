@@ -1,6 +1,6 @@
 # Rulers Language
 
-Rulers Language is Vaishnav's practical guide to giving AI clear direction and judging its output against what you meant. The opening speaks directly to the reader and teaches through a before-and-after prompt, while optional sections provide project paths, tool choices, and deeper lessons. Its atmospheric dark theme uses restrained violet accents and layered surfaces.
+Rulers Language is VD's practical guide to giving AI clear direction and judging its output against what you meant. The opening speaks directly to the reader and teaches through a before-and-after prompt, while optional sections provide project paths, tool choices, and deeper lessons. Its atmospheric dark theme uses restrained violet accents and layered surfaces.
 
 The teaching point is deliberate: a commanding voice does not unlock extra intelligence. The AI does not reward status or authority; it responds to the context and instructions supplied, with limitations. Clear goals, boundaries, and evidence make the result easier to judge. They do not guarantee correctness.
 
@@ -23,7 +23,7 @@ Four illustrative Datum vehicle-platform exercises show how to:
 
 The Datum scenarios are teaching examples, not claims of documented results. Commercial desk research is exploratory Design work; it can shape hypotheses but does not validate demand. Each example includes a copy-ready prompt, an instruction-to-reason comparison, expected evidence, a common failure, an exercise, and a button to load the example into the prompt studio.
 
-The guide ends with an original, illustrated “three tools” card: Map the system, Guide the change, and Prove the path. These are ways to structure work, not claims that prompt language unlocks extra intelligence.
+The guide ends with the supplied artwork used as a full-card background behind a direct message from VD: map the work, make the change, and prove what happened. The three stages make the method concrete; they are not claims that prompt language unlocks extra intelligence.
 
 ## Project files
 
@@ -31,7 +31,7 @@ The guide ends with an original, illustrated “three tools” card: Map the sys
 - `styles.css` and `vision-tool.css` contain the responsive design and accessibility states.
 - `assets/rulers-language-hero.jpg` is the supplied atmospheric homepage background.
 - `assets/system-landscape.webp` is the supplied wide image used in the optional system-learning interlude.
-- `assets/rulers-arsenal.png` is the artwork for the All-Weapon Synchronization card ("They've been predetermined since the moment I first designed everything!").
+- `assets/rulers-arsenal.png` is the artwork used as the closing card's background, with the three stages of the method layered over it.
 - `script.js` contains the prompt builder, instruction explanations, coding-agent examples, copy/share actions, tool finder, and browser-local lesson and launch checklists.
 - `README.md` explains how to run and publish the project.
 - `PROJECT-RECORD.md` keeps repository and publishing details.
@@ -42,11 +42,11 @@ Open `index.html` in a browser. This is a static site and does not require a pac
 
 ## Publish on GitHub Pages
 
-1. Push the project files to the `main` branch of the public `vision-intelligence` repository.
+1. Push the project files to the `main` branch of the public `rulers-language` repository.
 2. In the repository, open **Settings**, then **Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
 4. Choose the `main` branch and `/ (root)` folder, then save.
-5. Wait for deployment at https://aigroupchathq.github.io/vision-intelligence/.
+5. Wait for deployment at https://aigroupchathq.github.io/rulers-language/.
 
 ## Privacy and sharing
 

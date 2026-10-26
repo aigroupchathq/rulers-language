@@ -2,13 +2,13 @@
 
 ## Purpose
 
-A browser-based teaching guide for helping people give AI clearer instructions through three separate work modes—Design, Implementation, and Verification—and improve them from observed outcomes. The opening is written as a personal lesson from Vaishnav to the reader.
+A browser-based teaching guide for helping people give AI clearer instructions through three separate work modes—Design, Implementation, and Verification—and improve them from observed outcomes. The opening is written as a personal lesson from VD to the reader.
 
 The name refers to expressive, deliberate language, not status or power over an AI system. Clear instructions can improve direction, but do not unlock intelligence, guarantee correctness, or make the system reward authority.
 
 ## Current source
 
-- Repository: https://github.com/aigroupchathq/vision-intelligence
+- Repository: https://github.com/aigroupchathq/rulers-language
 - Source files: `index.html`, `styles.css`, `vision-tool.css`, `script.js`
 - Documentation: `README.md`
 - Former Pages URL (does not redirect): https://aigroupchathq.github.io/aigroupchat-guide/
@@ -18,7 +18,7 @@ The name refers to expressive, deliberate language, not status or power over an 
 
 - Default branch: `main`
 - Pages source: `/ (root)`
-- Public URL: https://aigroupchathq.github.io/vision-intelligence/
+- Public URL: https://aigroupchathq.github.io/rulers-language/
 - Status: Published from the repository's `main` branch at the root.
 
 ## Site contents
@@ -26,7 +26,7 @@ The name refers to expressive, deliberate language, not status or power over an 
 - Guided prompt builder with separate Design, Implementation, and Verification modes.
 - Atmospheric dark visual theme with the supplied image layered behind the personal before-and-after teaching example in the opening view.
 - Supplied 3840×1374 panoramic fantasy image used as an optional system-learning interlude before the project lessons.
-- Illustrated All-Weapon Synchronization card presents the multi-armed entity and the system directive: "You will be using each weapon. One for all work power, once you understand what Rulers Language is."
+- Closing card uses the supplied artwork as a full-card background with a direct teaching message: map the work, make the change, and prove what happened.
 - Longer project paths, tool directory, lessons, workflow, glossary, checklist, and FAQ grouped into optional disclosures.
 - Eight tone choices, each with its best use and a practical risk to watch.
 - Editable prompts with copy and browser share-sheet support where available.
@@ -53,4 +53,4 @@ The name refers to expressive, deliberate language, not status or power over an 
 
 ## Rename record
 
-The repository was previously named `aigroupchat-guide`, and the site was titled “AI Group Chat.” The site was subsequently branded “Vision Intelligence.” Its current public-facing name is “Rulers Language.” Repository and GitHub Pages URLs continue to use `vision-intelligence`; changing the display name does not rename the repository or its URL.
+The repository was previously named `aigroupchat-guide`, then `vision-intelligence`. The site was successively branded “AI Group Chat,” “Vision Intelligence,” and “Rulers Language.” The repository is now named `rulers-language`, and GitHub Pages uses the matching project URL.
