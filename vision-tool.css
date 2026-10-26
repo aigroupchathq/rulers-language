@@ -193,29 +193,39 @@ body{background:var(--paper);color:var(--ink)}
 .system-landscape figcaption .eyebrow{margin:0 0 12px;color:#c4b3ff}
 .system-landscape figcaption h2{max-width:620px;margin:0;color:#f0edf6;font:600 clamp(30px,4.2vw,48px)/1.05 var(--display);letter-spacing:-.06em}
 .system-landscape figcaption p:last-child{max-width:560px;margin:14px 0 0;color:#d2cdd9;font-size:13px;line-height:1.65}
-.rulers-card-section{padding:54px 0 76px;background:#0b0c12}
-.rulers-card{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.2fr);align-items:stretch;overflow:hidden;border:1px solid #49415e;background:linear-gradient(135deg,#171522,#11131b 74%)}
-.rulers-card-art{position:relative;display:grid;min-height:360px;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,#493c6b 0%,#241e37 38%,#11131b 76%)}
-.ruler-orbit{position:absolute;display:block;width:210px;height:210px;border:1px solid rgba(196,179,255,.42);border-radius:50%;transform:rotate(-35deg) scaleY(.42)}
-.ruler-orbit-one{box-shadow:0 0 38px rgba(184,165,245,.12)}
-.ruler-orbit-two{width:290px;height:290px;border-color:rgba(196,179,255,.24);transform:rotate(42deg) scaleY(.42)}
-.rulers-card-art:before,.rulers-card-art:after{position:absolute;content:"";width:1px;height:84%;background:linear-gradient(transparent,rgba(196,179,255,.38),transparent);transform:rotate(34deg)}
-.rulers-card-art:after{transform:rotate(-34deg)}
-.ruler-core{z-index:1;display:grid;width:96px;height:96px;place-items:center;border:1px solid #c4b3ff;border-radius:50%;background:#171522;color:#eee8ff;font:500 24px var(--mono);box-shadow:0 0 45px rgba(184,165,245,.32)}
-.ruler-tool{position:absolute;z-index:2;padding:8px 10px;border:1px solid #514668;background:#171522;color:#d8cef4;font:9px var(--mono);letter-spacing:.08em}
-.ruler-tool-map{top:22%;left:12%}
-.ruler-tool-guide{top:20%;right:9%}
-.ruler-tool-prove{right:15%;bottom:19%}
-.rulers-card-copy{display:flex;padding:clamp(26px,5vw,58px);flex-direction:column;align-items:flex-start;justify-content:center}
-.rulers-card-copy .eyebrow{margin:0 0 14px;color:#c4b3ff}
-.rulers-card-copy h2{max-width:540px;margin:0;color:#f0edf6;font:600 clamp(32px,4vw,48px)/1.02 var(--display);letter-spacing:-.06em}
-.rulers-card-copy>p:not(.eyebrow){max-width:580px;color:#d2cdd9;font-size:13px;line-height:1.7}
-.rulers-card-copy .rulers-card-note{padding-left:13px;border-left:2px solid #8e76da;color:#bdb7c9}
-.rulers-card-copy .button{margin-top:10px}
+.rulers-card-section{padding:72px 0 92px;background:#0b0c12;border-top:1px solid var(--line)}
+.rulers-card{display:grid;grid-template-columns:minmax(320px,440px) minmax(0,1.25fr);align-items:stretch;overflow:hidden;border:1px solid #3c3352;border-radius:8px;background:linear-gradient(145deg,#151320,#0d0f17 70%);box-shadow:0 24px 70px rgba(0,0,0,.6)}
+.rulers-card-art{position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 45%,#2a223f 0%,#161424 55%,#0b0c12 100%);border-right:1px solid #322b46;overflow:hidden;min-height:520px}
+.rulers-art-frame{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.rulers-arsenal-image{width:100%;height:100%;max-height:680px;object-fit:contain;object-position:center;display:block;filter:contrast(1.05) drop-shadow(0 0 35px rgba(184,165,245,.2))}
+.rulers-art-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,23,.5) 0%,transparent 15%,transparent 80%,rgba(13,15,23,.85) 100%);pointer-events:none}
+.weapon-badges-overlay{position:absolute;bottom:16px;left:16px;right:16px;display:flex;flex-direction:column;gap:6px;pointer-events:none}
+.weapon-pill{display:inline-block;align-self:flex-start;font:600 10px var(--mono);letter-spacing:.08em;padding:5px 9px;border-radius:3px;background:rgba(16,17,26,.88);backdrop-filter:blur(8px);border:1px solid rgba(196,179,255,.35);color:#f0edf6}
+.rulers-card-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4.5vw,52px);gap:16px}
+.rulers-card-copy .eyebrow{margin:0;color:#c4b3ff;font-size:11px}
+.rulers-arsenal-heading{margin:0;font-family:var(--display);letter-spacing:-.04em;line-height:1.15}
+.rulers-arsenal-heading .heading-lead{display:block;font-size:clamp(19px,2.4vw,27px);font-weight:600;color:#f0edf6;text-transform:uppercase;letter-spacing:-.02em}
+.rulers-arsenal-heading .heading-accent{display:block;font-size:clamp(21px,3vw,34px);font-weight:700;color:#ffb86c;text-transform:uppercase;letter-spacing:-.03em;margin-top:4px;text-shadow:0 0 25px rgba(255,184,108,.32)}
+.system-transmission-box{padding:14px 18px;background:#1c182a;border-left:3px solid #ffb86c;border-top:1px solid #362e4f;border-right:1px solid #362e4f;border-bottom:1px solid #362e4f;border-radius:4px}
+.transmission-header{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.transmission-indicator{width:7px;height:7px;border-radius:50%;background:#ffb86c;box-shadow:0 0 10px #ffb86c}
+.transmission-tag{font:600 10px var(--mono);letter-spacing:.12em;color:#ffb86c}
+.system-quote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(14px,1.4vw,17px);line-height:1.5;color:#ffffff}
+.rulers-arsenal-desc{margin:0;font-size:13px;line-height:1.65;color:#d4d0de}
+.arsenal-weapons-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:2px 0}
+.weapon-card{padding:12px 14px;background:#141520;border:1px solid #2d293d;border-radius:4px}
+.weapon-card-tag{display:block;font:600 9px var(--mono);letter-spacing:.08em;color:#b8a5f5;margin-bottom:4px;text-transform:uppercase}
+.weapon-card h4{margin:0 0 4px;font:700 13px var(--display);color:#ffffff;letter-spacing:-.01em}
+.weapon-card p{margin:0;font-size:11px;line-height:1.5;color:#b8b3c6}
+.rulers-card-note{margin:0;padding:12px 14px;background:#1a1b27;border-left:2px solid #8e76da;color:#d0cbe0;font-size:12px;line-height:1.6;border-radius:0 4px 4px 0}
+.rulers-card-note strong{color:#ffffff}
+.rulers-card-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+.closing{padding:44px 0 85px;display:flex;justify-content:space-between;align-items:end;gap:30px}
+.closing h2{color:#ffffff}
 .closing>div>p:last-child{max-width:440px;color:#b4b0bf;font-size:13px;line-height:1.6}
 @media(max-width:680px){.hero{padding-top:32px;padding-bottom:24px}.hero h1{font-size:clamp(50px,13vw,58px)}.hero-copy{font-size:14px;line-height:1.5;margin:14px 0}.hero-actions{gap:12px}.prompt-transformation{margin-top:20px;padding:14px}.optional-guide>summary{align-items:flex-start;flex-direction:column;gap:8px}.optional-guide>summary small{text-align:left}.transformation-heading{padding-bottom:9px;font-size:9px}.transformation-before,.transformation-after{padding:12px 0}.transformation-after{padding:12px}.transformation-gains{display:none}.transformation-footnote{margin-top:9px;font-size:10px}.transformation-after p{font-size:13px;line-height:1.4}}
 @media(max-width:680px){#top.hero{width:100%;padding-left:20px;padding-right:20px;background-position:52% center;background-image:linear-gradient(180deg,rgba(11,12,18,.78) 0%,rgba(11,12,18,.86) 27%,rgba(11,12,18,.96) 100%),url("assets/rulers-language-hero.jpg")}}
 @media(max-width:680px){.system-interlude{padding:30px 0 12px}.system-landscape,.system-landscape figcaption{min-height:410px}.system-landscape img{object-position:54% center}.system-landscape:after{background:linear-gradient(180deg,rgba(11,12,18,.05),rgba(11,12,18,.68) 38%,rgba(11,12,18,.96) 100%)}.system-landscape figcaption{justify-content:flex-end;padding:22px}.system-landscape figcaption h2{font-size:32px}.system-landscape figcaption p:last-child{font-size:12px}}
-@media(max-width:800px){.rulers-card{grid-template-columns:1fr}.rulers-card-art{min-height:260px}.ruler-core{width:80px;height:80px}.rulers-card-copy{padding:28px}}
-@media(max-width:680px){.rulers-card-section{padding:30px 0 48px}.rulers-card-art{min-height:220px}.ruler-orbit{width:170px;height:170px}.ruler-orbit-two{width:230px;height:230px}.ruler-tool-map{left:8%;top:17%}.ruler-tool-guide{right:7%;top:16%}.ruler-tool-prove{right:10%;bottom:14%}.rulers-card-copy{padding:23px}.rulers-card-copy h2{font-size:34px}.closing{gap:24px}}
+@media(max-width:900px){.rulers-card{grid-template-columns:1fr}.rulers-card-art{border-right:0;border-bottom:1px solid #322b46;min-height:420px}.rulers-arsenal-image{max-height:460px}.arsenal-weapons-grid{grid-template-columns:1fr;gap:8px}}
+@media(max-width:680px){.rulers-card-section{padding:36px 0 54px}.rulers-card-art{min-height:360px}.rulers-card-copy{padding:22px 18px;gap:14px}.rulers-arsenal-heading .heading-lead{font-size:16px}.rulers-arsenal-heading .heading-accent{font-size:20px}.closing{gap:24px;flex-direction:column;align-items:flex-start}.closing .button{margin-top:14px}}
 [hidden]{display:none!important}

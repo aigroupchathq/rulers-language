@@ -31,6 +31,7 @@ The guide ends with an original, illustrated “three tools” card: Map the sys
 - `styles.css` and `vision-tool.css` contain the responsive design and accessibility states.
 - `assets/rulers-language-hero.jpg` is the supplied atmospheric homepage background.
 - `assets/system-landscape.webp` is the supplied wide image used in the optional system-learning interlude.
+- `assets/rulers-arsenal.png` is the artwork for the All-Weapon Synchronization card ("They've been predetermined since the moment I first designed everything!").
 - `script.js` contains the prompt builder, instruction explanations, coding-agent examples, copy/share actions, tool finder, and browser-local lesson and launch checklists.
 - `README.md` explains how to run and publish the project.
 - `PROJECT-RECORD.md` keeps repository and publishing details.
