@@ -1,6 +1,8 @@
-# Vision Intelligence
+# Rulers Language
 
-Vision Intelligence is a practical language tool for giving AI clearer direction and judging the result against what you meant. It guides better requests; it does not make AI infallible.
+Rulers Language is Vaishnav's practical guide to giving AI clear direction and judging its output against what you meant. The opening speaks directly to the reader and teaches through a before-and-after prompt, while optional sections provide project paths, tool choices, and deeper lessons. Its atmospheric dark theme uses restrained violet accents and layered surfaces.
+
+The teaching point is deliberate: a commanding voice does not unlock extra intelligence. The AI does not reward status or authority; it responds to the context and instructions supplied, with limitations. Clear goals, boundaries, and evidence make the result easier to judge. They do not guarantee correctness.
 
 ## The three work modes
 
@@ -10,11 +12,26 @@ Vision Intelligence is a practical language tool for giving AI clearer direction
 
 Choose a communication tone that fits the task. Tone shapes expression; it does not grant expertise or guarantee truth. After trying a prompt, record what happened and improve the instruction responsible for the friction.
 
+## Learn from real projects
+
+Four illustrative Datum vehicle-platform exercises show how to:
+
+- Explore creative interface directions while preserving the existing architecture.
+- Inspect secondary screens, nested dialogs, and loading, empty, error, and disabled states.
+- Separate unanswered questions and suspected risks from evidence-backed defects.
+- Research customer problems, competing alternatives, and contrary evidence without inventing demand.
+
+The Datum scenarios are teaching examples, not claims of documented results. Commercial desk research is exploratory Design work; it can shape hypotheses but does not validate demand. Each example includes a copy-ready prompt, an instruction-to-reason comparison, expected evidence, a common failure, an exercise, and a button to load the example into the prompt studio.
+
+The guide ends with an original, illustrated “three tools” card: Map the system, Guide the change, and Prove the path. These are ways to structure work, not claims that prompt language unlocks extra intelligence.
+
 ## Project files
 
 - `index.html` contains the page content and metadata.
 - `styles.css` and `vision-tool.css` contain the responsive design and accessibility states.
-- `script.js` contains the prompt builder, tone guidance, copy/share actions, tool finder, and browser-local lesson and launch checklists.
+- `assets/rulers-language-hero.jpg` is the supplied atmospheric homepage background.
+- `assets/system-landscape.webp` is the supplied wide image used in the optional system-learning interlude.
+- `script.js` contains the prompt builder, instruction explanations, coding-agent examples, copy/share actions, tool finder, and browser-local lesson and launch checklists.
 - `README.md` explains how to run and publish the project.
 - `PROJECT-RECORD.md` keeps repository and publishing details.
 
@@ -33,7 +50,7 @@ Open `index.html` in a browser. This is a static site and does not require a pac
 ## Privacy and sharing
 
 - Prompts and lessons are created locally in the visitor's browser. The site does not send them to an AI service or a backend.
-- The lesson log stores up to 20 entries in the current browser only; clearing browser storage removes them.
+- The lesson log stores up to 20 entries, including the actual prompt, observed outcome, concrete observation, correction, and optional evidence, in the current browser only. Older entries remain readable; information that was not recorded is shown as unavailable.
 - Copy a prompt to paste it into the AI tool you choose. The share action uses the browser's share sheet when available, otherwise it copies the prompt.
 - Review prompts before sharing them. Do not include passwords, API keys, private records, or sensitive personal information.
 - The launch checklist stores progress in the visitor's browser only.
