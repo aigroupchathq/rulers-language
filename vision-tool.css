@@ -81,7 +81,7 @@
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:800px){.project-lessons-head{grid-template-columns:1fr;gap:18px}.project-lessons-head .eyebrow{margin-bottom:-5px}.project-lesson{grid-template-columns:1fr}.project-lesson-title,.lesson-situation,.lesson-prompt-block,.lesson-comparison-wrap,.lesson-proof,.project-lesson>.use-example,.research-boundary{grid-column:1}.lesson-proof{grid-template-columns:1fr}}
 @media(max-width:680px){.principle-note{font-size:11px}.lesson-panel{padding:15px}.generated-actions>div{width:100%}.generated-actions .copy-button{flex:1}.project-lessons{padding:76px 0}.project-lesson{padding:18px}.lesson-subhead{align-items:flex-start;flex-direction:column}.lesson-comparison th,.lesson-comparison td{padding:9px 8px;font-size:10px}.project-lesson>.use-example{width:100%}}
-:root{--paper:#0b0c12;--ink:#f0edf6;--muted:#a6a2b3;--line:#292633;--green:#b8a5f5;--mint:#171b26;--peach:#211b26;--lilac:#1e1b2c;--white:#14151e}
+:root{--paper:#0b0c12;--ink:#f0edf6;--muted:#a6a2b3;--line:#292633;--green:#b8a5f5;--mint:#171b26;--peach:#211b26;--lilac:#1e1b2c;--white:#14151e;--sans:"Outfit",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--display:"Outfit",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 body{background:var(--paper);color:var(--ink)}
 .site-header{background:#0b0c12ee;border-color:var(--line)}
 .wordmark,.main-nav a,.nav-cta{color:var(--ink)}
