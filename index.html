@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rulers Language is VD's practical guide to giving AI clear direction, setting boundaries, and judging its answers." />
+    <meta name="description" content="Rulers Language by VD: clear prompts, practical tools, and honest checks on AI's work." />
     <meta property="og:title" content="Rulers Language | Learn to direct AI clearly" />
     <meta property="og:description" content="A personal guide to clear prompts, useful boundaries, and evidence over empty confidence." />
     <meta property="og:type" content="website" />
@@ -20,13 +20,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=2" />
-    <link rel="stylesheet" href="vision-tool.css?v=13" />
+    <link rel="stylesheet" href="vision-tool.css?v=17" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="shell nav-wrap">
-        <a class="wordmark" href="#top" aria-label="Rulers Language home"><span class="mark">RL</span><span>Rulers Language</span></a>
+        <a class="wordmark" href="#top" aria-label="Rulers Language home"><span class="mark" aria-hidden="true"><svg class="mark-symbol" viewBox="0 0 44 44" focusable="false"><rect class="mark-frame" x="1" y="1" width="42" height="42" rx="9" /><path class="mark-ruler" d="M8 9v26m0-21h5m-5 5h3m-3 5h5m-5 5h3m-3 5h5" /><text class="mark-letters" x="14" y="28">RL</text></svg></span><span>Rulers Language</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
         <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <a href="#paths">Learning paths</a>
@@ -130,13 +130,15 @@
       <section class="section shell tools-section" id="tools">
         <div class="section-head">
           <div><p class="eyebrow">02 / Choose your workbench</p><h2>Tools are options.<br />Your goal comes first.</h2></div>
-          <p class="section-intro">There is no universally best builder. Pick one that fits the task, try a small project and check current plan limits on the official site before committing.</p>
+          <p class="section-intro">I will tell you what each tool is, what it is unusually good at, and where its limits are. Choose for the job in front of you, not the loudest promise.</p>
         </div>
         <div class="filter-bar" role="group" aria-label="Filter tools by use">
           <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All tools</button>
           <button class="filter-button" type="button" data-filter="visual" aria-pressed="false">Visual builder</button>
           <button class="filter-button" type="button" data-filter="app" aria-pressed="false">App builder</button>
           <button class="filter-button" type="button" data-filter="code" aria-pressed="false">Code editor or agent</button>
+          <button class="filter-button" type="button" data-filter="assistant" aria-pressed="false">AI assistant</button>
+          <button class="filter-button" type="button" data-filter="repository" aria-pressed="false">GitHub and repos</button>
         </div>
         <div class="tool-grid" id="tool-grid">
           <article class="tool-card" data-category="visual"><div class="tool-head"><span class="tool-monogram monogram-v">v0</span><span class="tool-type">VISUAL BUILDER</span></div><h3>v0</h3><p>Explore and generate interface ideas, then refine the design before you build the rest of the product.</p><div class="tool-fit"><span>Good for</span><b>Page and interface prototypes</b></div><div class="tool-actions"><a href="https://v0.dev/" target="_blank" rel="noreferrer">Visit v0</a><a href="https://v0.dev/pricing" target="_blank" rel="noreferrer">Check plans</a></div></article>
@@ -145,8 +147,15 @@
           <article class="tool-card" data-category="app"><div class="tool-head"><span class="tool-monogram monogram-r">R</span><span class="tool-type">APP BUILDER</span></div><h3>Replit</h3><p>Create and run projects in an online development environment, with options for learning and collaboration.</p><div class="tool-fit"><span>Good for</span><b>Learning by running code</b></div><div class="tool-actions"><a href="https://replit.com/" target="_blank" rel="noreferrer">Visit Replit</a><a href="https://replit.com/pricing" target="_blank" rel="noreferrer">Check plans</a></div></article>
           <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-c">Cu</span><span class="tool-type">CODE EDITOR</span></div><h3>Cursor</h3><p>Work with AI inside a code editor. Review proposed changes and use version control to keep a recoverable history.</p><div class="tool-fit"><span>Good for</span><b>Editing an existing project</b></div><div class="tool-actions"><a href="https://cursor.com/" target="_blank" rel="noreferrer">Visit Cursor</a><a href="https://cursor.com/pricing" target="_blank" rel="noreferrer">Check plans</a></div></article>
           <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-a">A</span><span class="tool-type">CODING ASSISTANT</span></div><h3>Claude Code</h3><p>Use a coding assistant from the terminal to inspect files, make changes and run development commands.</p><div class="tool-fit"><span>Good for</span><b>People ready to use a terminal</b></div><div class="tool-actions"><a href="https://claude.ai/code" target="_blank" rel="noreferrer">Learn about Claude Code</a><a href="https://www.anthropic.com/pricing" target="_blank" rel="noreferrer">Check plans</a></div></article>
+          <article class="tool-card" data-category="repository"><div class="tool-head"><span class="tool-monogram monogram-g">GH</span><span class="tool-type">CODE HOST &amp; COLLABORATION</span></div><h3>GitHub</h3><p>GitHub is where teams host repositories and coordinate changes. A repository, or repo, is the project home for files, history, issues and proposed updates.</p><div class="tool-fit"><span>Special power</span><b>Keep a reviewable history and collaborate on changes</b></div><div class="tool-actions"><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Explore GitHub</a><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories" target="_blank" rel="noopener noreferrer">What is a repo?</a></div></article>
+          <article class="tool-card" data-category="assistant"><div class="tool-head"><span class="tool-monogram monogram-g">GPT</span><span class="tool-type">GENERAL AI ASSISTANT</span></div><h3>ChatGPT</h3><p>Use it to explore an idea, explain unfamiliar concepts, draft a plan or reason through options. It does not automatically see or change your project files.</p><div class="tool-fit"><span>Special power</span><b>Think through a problem in conversation</b></div><div class="tool-actions"><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Visit ChatGPT</a><a href="https://help.openai.com/" target="_blank" rel="noopener noreferrer">Read help</a></div></article>
+          <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-o">OC</span><span class="tool-type">OPEN-SOURCE CODING AGENT</span></div><h3>OpenCode</h3><p>A coding agent you can run in a terminal or supported editor. It can inspect and edit a project when you grant access; model and provider choices depend on your setup.</p><div class="tool-fit"><span>Special power</span><b>Bring different model providers into a code workflow</b></div><div class="tool-actions"><a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">Visit OpenCode</a><a href="https://opencode.ai/docs/" target="_blank" rel="noopener noreferrer">Read the docs</a></div></article>
+          <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-v">VS</span><span class="tool-type">CODE EDITOR</span></div><h3>Visual Studio Code</h3><p>VS Code is the workbench for opening project files, using a terminal, running a debugger and adding extensions. It is an editor; AI features come from extensions or services you choose.</p><div class="tool-fit"><span>Special power</span><b>Keep code, tools and changes together on your machine</b></div><div class="tool-actions"><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visit VS Code</a><a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener noreferrer">Read the docs</a></div></article>
+          <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-c">Co</span><span class="tool-type">AI CODING ASSISTANT</span></div><h3>GitHub Copilot</h3><p>Copilot can suggest code and answer questions in supported editors. Depending on your plan and settings, it may also help with larger coding tasks; review every proposed change.</p><div class="tool-fit"><span>Special power</span><b>Bring AI assistance into the editor and GitHub workflow</b></div><div class="tool-actions"><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Explore Copilot</a><a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">Read the docs</a></div></article>
+          <article class="tool-card" data-category="code"><div class="tool-head"><span class="tool-monogram monogram-a">AG</span><span class="tool-type">AGENT-FIRST DEVELOPMENT ENVIRONMENT</span></div><h3>Google Antigravity</h3><p>An agent-oriented development environment designed to let agents plan and work across code, with you directing and reviewing their actions. Availability and features can change.</p><div class="tool-fit"><span>Special power</span><b>Coordinate agent work around a project, not just a single answer</b></div><div class="tool-actions"><a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">Explore Antigravity</a></div></article>
+          <article class="tool-card" data-category="repository"><div class="tool-head"><span class="tool-monogram monogram-r">R</span><span class="tool-type">THE PROJECT HOME</span></div><h3>What is a repository?</h3><p>A repo is the organized home for a project: its files and change history, and often its issues and collaboration. Git tracks versions; GitHub can host and share that repo.</p><div class="tool-fit"><span>Special power</span><b>See what changed and return to an earlier version</b></div><div class="tool-actions"><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories" target="_blank" rel="noopener noreferrer">Learn repository basics</a></div></article>
         </div>
-        <p class="editorial-note"><strong>A note on pricing:</strong> plans, usage limits and included features change. Always check the official pricing page for the tool you choose.</p>
+        <p class="editorial-note"><strong>Keep your hands on the work:</strong> an agent can only inspect or change what its permissions allow. Review the proposed edits, keep a recoverable copy, and run checks yourself. Features, access and pricing change, so confirm details on each official site.</p>
       </section>
         </div>
       </details>
@@ -505,10 +514,10 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <a class="wordmark footer-wordmark" href="#top"><span class="mark">RL</span><span>Rulers Language</span></a>
-        <p>Created by VD. I want to help you say what you mean, notice what the AI actually did, and decide what to do next.</p>
+        <a class="wordmark footer-wordmark" href="#top" aria-label="Rulers Language home"><span class="mark" aria-hidden="true"><svg class="mark-symbol" viewBox="0 0 44 44" focusable="false"><rect class="mark-frame" x="1" y="1" width="42" height="42" rx="9" /><path class="mark-ruler" d="M8 9v26m0-21h5m-5 5h3m-3 5h5m-5 5h3m-3 5h5" /><text class="mark-letters" x="14" y="28">RL</text></svg></span><span>Rulers Language</span></a>
+        <p>Made by VD. Say what you mean. Check what happened.</p>
         <nav aria-label="Footer navigation"><a href="#paths">Learning paths</a><a href="#tools">Tools</a><a href="#basics">Plain language basics</a><a href="#launch">Launch checklist</a></nav>
-        <span class="footer-note">Independent guide. Check providers for current details.</span>
+        <span class="footer-note">© 2026 VD. Original text and site design.</span>
         <a class="feedback-link" href="https://github.com/aigroupchathq/rulers-language/issues/new?title=Rulers%20Language%20feedback">Suggest an improvement</a>
       </div>
     </footer>

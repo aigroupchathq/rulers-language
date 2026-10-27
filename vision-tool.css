@@ -145,7 +145,12 @@ body{background:var(--paper);color:var(--ink)}
 .check-item input:checked~span:last-child strong{color:#aaa5b5}
 .faq-list summary:after{color:#c4b3ff}
 .site-footer{background:#08090e;color:#e8e4ef;border-top:1px solid var(--line)}
-.footer-wordmark .mark{background:#b8a5f5;color:#15121d}
+.mark{width:38px;height:38px;background:transparent;color:inherit;font-size:0;letter-spacing:0}
+.mark-symbol{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 12px rgba(159,137,229,.25))}
+.mark-frame{fill:#171522;stroke:#62547f;stroke-width:1.2}
+.mark-ruler{fill:none;stroke:#b8a5f5;stroke-width:1.4;stroke-linecap:round}
+.mark-letters{fill:#f4f0ff;font-family:Outfit,sans-serif;font-size:17px;font-weight:700;letter-spacing:-1.3px}
+.footer-wordmark .mark{background:transparent;color:inherit}
 .footer-inner>p,.footer-inner nav a,.footer-note{color:#aaa5b5}
 .project-lessons{background:#0e1017}
 .datum-example-note{background:#211c2c;color:#dfd6f5}
@@ -185,7 +190,7 @@ body{background:var(--paper);color:var(--ink)}
 .transformation-gains{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
 .transformation-gains span{padding:7px 9px;border:1px solid #393547;color:#d2c8ed;font:9px var(--mono)}
 .transformation-footnote{margin:16px 0 0;color:#aaa5b5;font-size:11px;line-height:1.6}
-#top.hero{width:100%;padding-left:max(32px,calc((100% - 1160px)/2));padding-right:max(32px,calc((100% - 1160px)/2));background-image:linear-gradient(90deg,rgba(11,12,18,.94) 0%,rgba(11,12,18,.86) 38%,rgba(11,12,18,.68) 68%,rgba(11,12,18,.82) 100%),linear-gradient(0deg,#0b0c12 0%,transparent 22%,transparent 78%,#0b0c12 100%),url("assets/rulers-language-hero.jpg");background-size:cover;background-position:center 43%}
+#top.hero{width:100%;padding-left:max(32px,calc((100% - 1160px)/2));padding-right:max(32px,calc((100% - 1160px)/2));background-image:linear-gradient(90deg,rgba(11,12,18,.76) 0%,rgba(11,12,18,.63) 38%,rgba(11,12,18,.4) 68%,rgba(11,12,18,.64) 100%),linear-gradient(0deg,rgba(11,12,18,.64) 0%,transparent 22%,transparent 78%,rgba(11,12,18,.64) 100%),url("assets/rulers-language-hero.jpg");background-size:cover;background-position:center 43%}
 #top .prompt-transformation{background:linear-gradient(145deg,rgba(23,25,35,.9),rgba(23,21,34,.84));backdrop-filter:blur(3px)}
 #top .transformation-after{background:rgba(33,28,44,.82)}
 .system-interlude{padding:64px 0 24px;background:#0b0c12}
@@ -216,11 +221,13 @@ body{background:var(--paper);color:var(--ink)}
 .closing{padding:44px 0 85px;display:flex;justify-content:space-between;align-items:end;gap:30px}
 .closing h2{color:#ffffff}
 .closing>div>p:last-child{max-width:440px;color:#b4b0bf;font-size:13px;line-height:1.6}
-@media(max-width:680px){.hero{padding-top:32px;padding-bottom:24px}.hero h1{font-size:clamp(50px,13vw,58px)}.hero-copy{font-size:14px;line-height:1.5;margin:14px 0}.hero-actions{gap:12px}.prompt-transformation{margin-top:20px;padding:14px}.optional-guide>summary{align-items:flex-start;flex-direction:column;gap:8px;padding:16px 18px}.optional-guide>summary small{text-align:left}.transformation-heading{padding-bottom:9px;font-size:9px}.transformation-before,.transformation-after{padding:12px 0}.transformation-after{padding:12px}.transformation-gains{display:none}.transformation-footnote{margin-top:9px;font-size:10px}.transformation-after p{font-size:13px;line-height:1.4}}
-@media(max-width:680px){#top.hero{width:100%;padding-left:20px;padding-right:20px;background-position:52% center;background-image:linear-gradient(180deg,rgba(11,12,18,.78) 0%,rgba(11,12,18,.86) 27%,rgba(11,12,18,.96) 100%),url("assets/rulers-language-hero.jpg")}}
+@media(max-width:680px){.hero{padding-top:38px;padding-bottom:32px}.hero h1{font-size:clamp(50px,13vw,58px)}.hero-copy{font-size:15px;line-height:1.6;margin:17px 0 21px}.hero-actions{gap:14px}.prompt-transformation{margin-top:24px;padding:16px}.optional-guide>summary{align-items:flex-start;flex-direction:column;gap:8px;padding:16px 18px}.optional-guide>summary small{text-align:left}.transformation-heading{padding-bottom:11px;font-size:9px}.transformation-before,.transformation-after{padding:14px 0}.transformation-after{padding:14px}.transformation-gains{display:none}.transformation-footnote{margin-top:11px;font-size:10px}.transformation-after p{font-size:13px;line-height:1.5}}
+@media(max-width:680px){#top.hero{position:relative;isolation:isolate;width:100%;padding-left:20px;padding-right:20px;overflow:hidden;background:#0b0c12}#top.hero:before{content:"";position:absolute;z-index:0;inset:0 0 auto;height:clamp(360px,112vw,440px);background-image:linear-gradient(90deg,rgba(11,12,18,.62) 0%,rgba(11,12,18,.32) 54%,rgba(11,12,18,.04) 100%),linear-gradient(180deg,rgba(11,12,18,.08) 0%,rgba(11,12,18,.02) 54%,#0b0c12 100%),url("assets/rulers-language-hero.jpg");background-size:cover,cover,auto 100%;background-position:center,center,70% center;background-repeat:no-repeat;pointer-events:none}#top.hero>*{position:relative;z-index:1}}
 @media(max-width:680px){.system-interlude{padding:30px 0 12px}.system-landscape,.system-landscape figcaption{min-height:410px}.system-landscape img{object-position:54% center}.system-landscape:after{background:linear-gradient(180deg,rgba(11,12,18,.05),rgba(11,12,18,.68) 38%,rgba(11,12,18,.96) 100%)}.system-landscape figcaption{justify-content:flex-end;padding:22px}.system-landscape figcaption h2{font-size:32px}.system-landscape figcaption p:last-child{font-size:12px}}
 @media(max-width:900px){.rulers-card{min-height:0}.rulers-card-copy{max-width:760px;padding-top:360px}.arsenal-weapons-grid{grid-template-columns:1fr;gap:8px}}
-@media(max-width:680px){.rulers-card-section{padding:36px 0 54px}.rulers-card{background-image:linear-gradient(180deg,rgba(13,15,23,.08) 0%,rgba(13,15,23,.26) 24%,rgba(13,15,23,.9) 37%,#0d0f17 50%,#0d0f17 100%),url("assets/rulers-arsenal.png");background-size:100% 100%,100% auto;background-position:center,center top}.rulers-card-copy{padding:clamp(310px,82vw,360px) 18px 24px;gap:14px}.rulers-arsenal-heading .heading-lead{font-size:26px}.rulers-arsenal-heading .heading-accent{font-size:clamp(30px,9vw,40px)}.closing{gap:24px;flex-direction:column;align-items:flex-start}.closing .button{margin-top:14px}}
+@media(max-width:680px){.rulers-card-section{padding:36px 0 54px}.rulers-card{background-image:linear-gradient(180deg,rgba(13,15,23,.04) 0%,rgba(13,15,23,.15) 24%,rgba(13,15,23,.72) 42%,#0d0f17 54%,#0d0f17 100%),url("assets/rulers-arsenal.png");background-size:100% 100%,100% auto;background-position:center,center top;background-repeat:no-repeat;box-shadow:inset 0 0 0 1px rgba(196,179,255,.16),0 24px 70px rgba(0,0,0,.6)}.rulers-card-copy{padding:clamp(310px,82vw,360px) 18px 24px;gap:14px}.rulers-arsenal-heading .heading-lead{font-size:26px}.rulers-arsenal-heading .heading-accent{font-size:clamp(30px,9vw,40px)}.closing{gap:24px;flex-direction:column;align-items:flex-start}.closing .button{margin-top:14px}}
+@media(max-width:380px){.hero-actions{align-items:flex-start;flex-direction:column}.hero-actions .quiet-link{margin-left:2px}}
+@media(max-width:340px){.nav-wrap{gap:8px}.wordmark{gap:6px;font-size:10px}.mark{width:26px;height:26px}.nav-cta{padding:7px 5px;font-size:8px;white-space:nowrap}}
 @media(max-width:680px){.strip-inner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:start;gap:12px;padding:14px 0;line-height:1.5}.strip-inner b{display:none}}
 .section-head .eyebrow{grid-column:auto;margin-bottom:12px}
 .project-lessons-head .eyebrow{margin-bottom:12px}

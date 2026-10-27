@@ -12,6 +12,10 @@ The teaching point is deliberate: a commanding voice does not unlock extra intel
 
 Choose a communication tone that fits the task. Tone shapes expression; it does not grant expertise or guarantee truth. After trying a prompt, record what happened and improve the instruction responsible for the friction.
 
+## A simple tool map
+
+The workbench guide keeps the existing visual builders and adds plain-language explanations for GitHub, repositories, ChatGPT, OpenCode, Visual Studio Code, GitHub Copilot, and Google Antigravity. Each entry describes what the tool is useful for and what to review. A repository (repo) is the project home and change history; GitHub can host and share it. Editors and agents only have the access granted to them, and their proposed changes still need review.
+
 ## Learn from real projects
 
 Four illustrative Datum vehicle-platform exercises show how to:
