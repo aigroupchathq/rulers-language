@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <linearGradient id="night" x1="120" y1="0" x2="860" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#251331"/>
+      <stop offset=".52" stop-color="#10121E"/>
+      <stop offset="1" stop-color="#07090F"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0" cy="0" r="1" gradientTransform="matrix(1 251 -251 1 628 194)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC9A3"/>
+      <stop offset=".55" stop-color="#C56477"/>
+      <stop offset="1" stop-color="#653655" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloak" x1="611" y1="251" x2="729" y2="702" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D3150"/>
+      <stop offset=".42" stop-color="#171522"/>
+      <stop offset="1" stop-color="#08090F"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="416" y1="270" x2="778" y2="373" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8D9FF"/>
+      <stop offset=".5" stop-color="#E9E7FF"/>
+      <stop offset="1" stop-color="#8872D7"/>
+    </linearGradient>
+    <filter id="aura" x="344" y="0" width="563" height="619" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <pattern id="stars" width="91" height="91" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="15" r="1" fill="#EEE5FF" fill-opacity=".72"/>
+      <circle cx="58" cy="63" r="1.4" fill="#D1C2FF" fill-opacity=".5"/>
+      <circle cx="80" cy="25" r=".8" fill="#FFF" fill-opacity=".62"/>
+    </pattern>
+  </defs>
+  <path fill="url(#night)" d="M0 0h960v720H0z"/>
+  <path fill="url(#stars)" d="M0 0h960v720H0z"/>
+  <circle cx="625" cy="186" r="174" fill="#D0667D" fill-opacity=".55" filter="url(#aura)"/>
+  <circle cx="625" cy="186" r="129" fill="url(#moon)"/>
+  <circle cx="625" cy="186" r="105" stroke="#FFD3C0" stroke-opacity=".36"/>
+  <path d="M0 429 92 371l77 47 76-92 82 66 66-91 74 87 85-65 76 72 64-96 75 84 80-43 113 65v315H0V429Z" fill="#151422"/>
+  <path d="m0 534 136-89 95 59 105-75 87 71 107-87 78 79 112-84 91 91 73-43 76 47v217H0V534Z" fill="#0C0D14"/>
+  <path d="m520 697 64-266 30-118 38 3 35 118 68 263H520Z" fill="url(#cloak)"/>
+  <path d="m594 319 6-43 26-31 31 5 25 36-8 66-41 27-43-30 4-30Z" fill="#11111A" stroke="#82729D" stroke-width="3"/>
+  <path d="m611 299 15-7 16 8m-39 16 17-5 20 7" stroke="#B7A7D5" stroke-opacity=".8" stroke-width="2"/>
+  <path d="m599 351-91 80 46 28 74-59m33-43 108 57-47 38-79-46" fill="#211A2D" stroke="#6B587C" stroke-width="2"/>
+  <path d="m487 426-151-56m151 56 194-94" stroke="url(#steel)" stroke-width="8"/>
+  <path d="m335 370 34-18-9 23 10 20-35-25Zm346-38 19-30 8 22 25 8-38 8Z" fill="#D9D5FF"/>
+  <path d="m671 384-17-10 14-7-8-12 17 10 10-5-3 15 13 8-17-2" fill="#E8B799"/>
+  <path d="m592 432-69 151 38-26 19 96 47-194m38-18 83 152-43-20-2 86-65-162" fill="#090A11"/>
+  <path d="m531 570 30-26m-8 59 28-45m61-122 17 52m20 25 24 31" stroke="#4F465F" stroke-width="4"/>
+  <path d="m0 651 117-43 102 37 135-61 105 53 106-39 94 52 122-59 110 61 69-22v90H0v-69Z" fill="#08090F"/>
+  <path d="M102 129h114m-114 9h52M805 604h75m-75 9h36" stroke="#CEB9FA" stroke-opacity=".68"/>
+  <path d="M79 99h26v26m772 497h-26v26" stroke="#F0DBD7" stroke-opacity=".75" stroke-width="2"/>
+</svg>

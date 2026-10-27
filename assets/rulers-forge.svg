@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <linearGradient id="forge-bg" x1="86" y1="34" x2="880" y2="708" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132637"/>
+      <stop offset=".48" stop-color="#111522"/>
+      <stop offset="1" stop-color="#17101E"/>
+    </linearGradient>
+    <radialGradient id="forge-light" cx="0" cy="0" r="1" gradientTransform="matrix(1 275 -330 1 477 345)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9E9FF" stop-opacity=".85"/>
+      <stop offset=".35" stop-color="#5AB6D8" stop-opacity=".33"/>
+      <stop offset="1" stop-color="#3E709E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="blade" x1="354" y1="509" x2="663" y2="157" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9F8FF"/>
+      <stop offset=".44" stop-color="#86C7E9"/>
+      <stop offset="1" stop-color="#E9E4FF"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="481" y1="508" x2="480" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30354A"/>
+      <stop offset="1" stop-color="#0B0D14"/>
+    </linearGradient>
+    <filter id="blade-glow" x="262" y="58" width="428" height="543" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <path fill="url(#forge-bg)" d="M0 0h960v720H0z"/>
+  <path d="M0 0h960v720H0z" fill="url(#forge-light)"/>
+  <path d="M0 520 156 402l67 71 112-174 75 110 102-151 95 141 87-112 84 124 102-48 80 66v291H0V520Z" fill="#192130"/>
+  <path d="m0 586 99-66 78 39 114-86 106 75 93-57 96 67 110-72 91 75 99-38 74 52v145H0V586Z" fill="#10131C"/>
+  <path d="m488 552 151-326" stroke="#92DFFF" stroke-opacity=".46" stroke-width="46" filter="url(#blade-glow)"/>
+  <path d="m350 518 159-354 130 74-145 319-144-39Z" fill="url(#blade)" stroke="#E4F6FF" stroke-width="3"/>
+  <path d="m376 498 231-245M429 531l-82 93m108-80 95 67m-200-114 155 43" stroke="#50647B" stroke-width="7"/>
+  <path d="m479 557-24 77 28 40 56-3 28-45-39-79" fill="#171924" stroke="#B5C9E2" stroke-width="4"/>
+  <path d="m481 612-54 66 8 18 42-38 19 44 14-4-7-51 49 34 12-15-54-61" fill="#222132" stroke="#8774C4" stroke-width="3"/>
+  <path d="m194 700 29-122 107-73 98 72 43 143H194Zm376 20 33-141 101-83 122 95 36 129H570Z" fill="url(#stone)" stroke="#3B465A" stroke-width="3"/>
+  <path d="m200 579 129 16m-114 6 101-56m485 43-113 26m109-4-83-60" stroke="#72869F" stroke-opacity=".55" stroke-width="3"/>
+  <path d="M0 677h960v43H0z" fill="#090A10"/>
+  <path d="m142 260 40-20m-29 43 15-46m540 19 44-28m-28 53 12-57m72 180 38-23m-23 51 9-51" stroke="#C9F0FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M94 111h122m-122 9h48M820 604h72m-72 9h35" stroke="#9EDDF3" stroke-opacity=".75"/>
+  <path d="M75 81h27v27m785 498h-26v26" stroke="#C8EEFF" stroke-opacity=".82" stroke-width="2"/>
+  <circle cx="480" cy="190" r="6" fill="#F2FCFF"/>
+  <circle cx="456" cy="234" r="3" fill="#F2FCFF"/>
+  <circle cx="525" cy="212" r="3" fill="#F2FCFF"/>
+</svg>

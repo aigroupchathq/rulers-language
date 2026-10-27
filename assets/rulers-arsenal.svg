@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="arsenal-bg" x1="120" y1="0" x2="1097" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#251C36"/>
+      <stop offset=".48" stop-color="#11131D"/>
+      <stop offset="1" stop-color="#101A21"/>
+    </linearGradient>
+    <radialGradient id="arsenal-light" cx="0" cy="0" r="1" gradientTransform="matrix(1 360 -502 1 601 407)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C63D8" stop-opacity=".44"/>
+      <stop offset=".54" stop-color="#557DAB" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#557DAB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="250" y1="240" x2="1000" y2="605" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E0B8"/>
+      <stop offset=".5" stop-color="#BD9EF5"/>
+      <stop offset="1" stop-color="#9EDAF0"/>
+    </linearGradient>
+    <linearGradient id="pedestal" x1="600" y1="504" x2="600" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#383147"/>
+      <stop offset="1" stop-color="#0B0D13"/>
+    </linearGradient>
+    <pattern id="arsenal-grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="#D3C4F4" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <path fill="url(#arsenal-bg)" d="M0 0h1200v800H0z"/>
+  <path fill="url(#arsenal-grid)" d="M0 0h1200v800H0z"/>
+  <path fill="url(#arsenal-light)" d="M0 0h1200v800H0z"/>
+  <path d="M0 563 160 458l96 59 114-123 102 110 112-168 99 144 106-114 117 120 90-81 204 117v278H0V563Z" fill="#171A28"/>
+  <path d="m0 652 135-54 106 48 109-69 99 54 135-84 122 73 127-77 122 74 105-54 140 70v167H0V652Z" fill="#0C0E14"/>
+  <path d="m602 175 96 92-36 104 70 87-131 73-132-73 70-87-36-104 99-92Z" fill="#14141F" stroke="url(#metal)" stroke-width="4"/>
+  <path d="m602 218 51 55-24 91 47 76-74 43-74-43 47-76-24-91 51-55Z" fill="#282137" stroke="#DCC8FF" stroke-width="2"/>
+  <path d="M602 226v238m-47-190 47 54 47-54m-94 145 47-55 47 55" stroke="#F0DBB2" stroke-opacity=".72" stroke-width="3"/>
+  <path d="m250 296 85-34 40 87-91 56-34-109Zm706 36 42-87 84 37-36 111-90-61Z" fill="#151722" stroke="#C9B8F4" stroke-width="4"/>
+  <path d="m276 319 68-32 19 43-73 45-14-56Zm704 4 22-44 66 29-20 58-68-43Z" fill="url(#metal)"/>
+  <path d="m325 353-99 167m132-167 47 174m489-144 96 139m-132-150-53 169" stroke="#AFA1D2" stroke-opacity=".7" stroke-width="4"/>
+  <path d="m486 510 116 38 116-38 54 81-82 57H514l-82-57 54-81Z" fill="url(#pedestal)" stroke="#62567D" stroke-width="3"/>
+  <path d="M470 600h264m-217 22h170m-126 22h82" stroke="#B6A1E3" stroke-opacity=".55" stroke-width="2"/>
+  <circle cx="602" cy="493" r="7" fill="#FFF2D1"/>
+  <path d="M143 178h144m-144 10h56m840 403h-113m113 10h-52" stroke="#D5C8F6" stroke-opacity=".68"/>
+  <path d="M117 147h27v27m879 427h-27v27" stroke="#F1DBB5" stroke-opacity=".8" stroke-width="2"/>
+  <g fill="#E5D9FA">
+    <circle cx="435" cy="235" r="2"/><circle cx="772" cy="234" r="2"/><circle cx="384" cy="470" r="2"/>
+    <circle cx="824" cy="449" r="2"/><circle cx="516" cy="143" r="2"/><circle cx="689" cy="155" r="2"/>
+  </g>
+</svg>

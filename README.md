@@ -27,15 +27,15 @@ Four illustrative Datum vehicle-platform exercises show how to:
 
 The Datum scenarios are teaching examples, not claims of documented results. Commercial desk research is exploratory Design work; it can shape hypotheses but does not validate demand. Each example includes a copy-ready prompt, an instruction-to-reason comparison, expected evidence, a common failure, an exercise, and a button to load the example into the prompt studio.
 
-The guide ends with the supplied artwork used as a full-card background behind a direct message from VD: map the work, make the change, and prove what happened. The three stages make the method concrete; they are not claims that prompt language unlocks extra intelligence.
+The experience is organized like a field system: choose a mission, select a workbench, shape a prompt, and verify the result. Original, scalable fantasy illustrations distinguish the entry scene, three mission cards, deeper field map, and closing arsenal. These are original Rulers Language graphics, not Solo Leveling character art.
 
 ## Project files
 
 - `index.html` contains the page content and metadata.
 - `styles.css` and `vision-tool.css` contain the responsive design and accessibility states.
-- `assets/rulers-language-hero.jpg` is the supplied atmospheric homepage background.
-- `assets/system-landscape.webp` is the supplied wide image used in the optional system-learning interlude.
-- `assets/rulers-arsenal.png` is the artwork used as the closing card's background, with the three stages of the method layered over it.
+- `assets/rulers-gate.svg` is the original high-resolution entry-scene illustration.
+- `assets/rulers-hunter.svg`, `assets/rulers-forge.svg`, and `assets/rulers-proof.svg` are distinct original mission illustrations.
+- `assets/rulers-atlas.svg` and `assets/rulers-arsenal.svg` are original illustrations for the deeper field guide and closing system card.
 - `script.js` contains the prompt builder, instruction explanations, coding-agent examples, copy/share actions, tool finder, and browser-local lesson and launch checklists.
 - `README.md` explains how to run and publish the project.
 - `PROJECT-RECORD.md` keeps repository and publishing details.
